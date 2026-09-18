@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Integration 1
-        run: eacho "integration-1"
+        run: echo "integration-1"
         
   integration-2:
     needs: [build-1]
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Integration 2
-        run: eacho "integration-2"
+        run: echo "integration-2"
 
   lint:
     needs: [build-2]
